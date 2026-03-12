@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #141414;
+    color: white;
+    text-align: center;
+}
+
+/* Heading */
+.container {
+    margin-top: 60px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+/* Profiles container */
+.profiles {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+/* Individual profile */
+.profile img {
+    border-radius: 5px;
+    border: 3px solid transparent;
+    transition: transform 0.3s ease, border 0.3s ease;
+    cursor: pointer;
+}
+
+
+/* Netflix hover effect */
+.profile:hover img {
+    transform: scale(1.1);
+    border-color: white;
+}
+
+.profile p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #b3b3b3;
+}
+
+/* Anchor styling */
+.profile a {
+    text-decoration: none;
+    color: inherit;
+}

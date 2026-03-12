@@ -1,0 +1,119 @@
+/* ===== Universal styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #141414; /* Netflix dark background */
+    color: white;
+    text-align: center;
+}
+
+/* ===== Heading container ===== */
+.container {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+/* ===== Main content styling ===== */
+.content {
+    max-width: 800px;
+    margin: 50px auto; /* centers content */
+    padding: 30px;
+    background-color: #1e1e1e; /* dark card style */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    color: #f5f5f5;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    text-align: left; /* better for reading paragraphs and lists */
+}
+
+/* Bold labels (Netflix red) */
+.content p b,
+.content li b {
+    color: #e50914;
+}
+
+/* Paragraph spacing */
+.content p {
+    margin-bottom: 20px;
+}
+
+/* Lists styling for hobbies, skills, languages */
+.content ul {
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+/* Links styling (emails, external links) */
+.content a {
+    color: #e50914; /* Netflix red */
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+/* Horizontal line styling */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #333;
+    margin: 30px 0;
+}
+
+/* ===== Profile page hover images ===== */
+.profile img {
+    border-radius: 5px;
+    border: 3px solid transparent;
+    transition: transform 0.3s ease, border 0.3s ease;
+    cursor: pointer;
+}
+
+.profile:hover img {
+    transform: scale(1.1);
+    border-color: white;
+}
+
+.profile p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #b3b3b3;
+}
+
+.profile a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 600px) {
+    .content {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .profiles {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
